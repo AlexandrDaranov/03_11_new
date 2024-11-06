@@ -1,15 +1,7 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-import pytest
 import time
 
-@pytest.fixture()
-def browser():
-    browser = webdriver.Chrome()   #предусловие для открытия браузера перед тестом
-    browser.maximize_window()      #предусловие для раскрытие на полное окно
-    browser.implicitly_wait(3)     #ожидание 3 секунд для того, чтобы найти нужный элемент
-    yield browser
-    browser.close()     #постусловие для закрытия браузера после теста
+
 
 def test_open_ip6(browser):                        #Проверка названия карточки на доп странице
     browser.get('https://demoblaze.com/index.html')
