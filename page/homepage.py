@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By
+'''from selenium.webdriver.common.by import By
 
 class HomePage:
 
@@ -13,4 +13,5 @@ class HomePage:
 
     def iphone_6(self):
         iphone_6 = self.browser.find_element(By.XPATH, value='//a[text()="Iphone 6 32gb"]')
-        iphone_6.click()
+        iphone_6.click()'''
+
